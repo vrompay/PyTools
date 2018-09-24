@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Screen sharing</title>
+<link rel="stylesheet" href="style.css">
+<script>
+var reimg
+window.onload=function () {
+  reimg=document.getElementById('re')
+  setInterval(function () {
+    reimg.src=reimg.src.replace(/\?.*/,function () {
+      return '?'+new Date()
+    })
+  },10)
+}
+</script>
+</head>
+<body>
+	<img src="share.png?" id="re">
+</body>
+</html>
