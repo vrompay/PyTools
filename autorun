@@ -1,0 +1,8 @@
+#!/bin/bash
+
+clear
+sudo apt-get update
+sudo apt-get install python3.6
+sudo apt-get -y install python3-pip
+sudo python3 install.py
+sudo python3 run.py

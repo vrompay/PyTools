@@ -1,4 +1,2 @@
-print("Enter your name:")
-x = input()
-print("Hello, " + x)
-
+import os
+os.system("python3 Mouse.py")

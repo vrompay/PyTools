@@ -1,6 +1,6 @@
 import os
 
-programs = ["Automatic typer", "Celcius and Fahrenheit convertor", "Take screenshot", "Make graph"]
+programs = ["Automatic typer", "Celcius and Fahrenheit convertor", "Take screenshot", "Make graph", "Auto clicker"]
 inc = 0
 
 os.system("clear")
@@ -17,6 +17,7 @@ def menu(argument):
         1: "Degree.py",
         2: "Screenshot.py",
 	3: "Chart.py",
+	4: "Mouse.py",
     }
     return switcher.get(argument, "You invoked an error.")
 
