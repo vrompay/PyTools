@@ -4,6 +4,11 @@ import os
 # Clearing screen
 os.system("clear")
 
+# Title
+print("######################################################")
+print("######################HTML BUILDER####################")
+print("######################################################\n\n")
+
 # Start index
 html = input("Enter file name (no extentions): ") + ".html"
 file = open("./output/" + html,"w")

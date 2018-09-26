@@ -1,6 +1,8 @@
+# Import
 from PIL import Image, ImageDraw, ImageFont
 
-data = input("Data: ")
+# Data build up and variables
+data = input("Data (separate with comma (,)): ")
 data = data.split(",")
 sort = input("Sort data? (Y/N): ").lower()
 if sort == "y":
@@ -14,6 +16,7 @@ counter = 0
 name = ""
 max = 0
 
+# Building image
 for point in data:
 	width = width + 30
 	if int(point) >= max:
@@ -30,6 +33,9 @@ for point in data:
 	index = index + 30
 	counter = int(counter) + 1
 
+# Flip image
 img = img.transpose(Image.FLIP_TOP_BOTTOM)
+
+# Save image
 img.save("./output/" + input("File name: ") + ".png")
 
