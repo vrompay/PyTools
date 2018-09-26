@@ -10,9 +10,9 @@ def takeScreenshot():
 	time.sleep(int(input("Wait before taking screenshot (seconds): ")))
 
 	if output == "o":
-		pyautogui.screenshot("./output/screenshot.png")
+		pyautogui.screenshot("/output/screenshot.png")
 	elif output == "w":
-		pyautogui.screenshot("./webshare/share.png")
+		pyautogui.screenshot("/webshare/share.png")
 	else:
 		print("A mistake was made.")
 

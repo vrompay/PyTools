@@ -37,5 +37,5 @@ for point in data:
 img = img.transpose(Image.FLIP_TOP_BOTTOM)
 
 # Save image
-img.save("./output/" + input("File name: ") + ".png")
+img.save("/output/" + input("File name: ") + ".png")
 
