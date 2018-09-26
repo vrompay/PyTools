@@ -31,4 +31,5 @@ for point in data:
 	counter = int(counter) + 1
 
 img = img.transpose(Image.FLIP_TOP_BOTTOM)
-img.save("output/" + input("File name: ") + ".png")
+img.save("./output/" + input("File name: ") + ".png")
+

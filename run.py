@@ -1,7 +1,8 @@
 import os
 
-programs = ["Automatic typer", "Celcius and Fahrenheit convertor", "Take screenshot", "Make graph", "Auto clicker"]
+programs = ["Automatic typer", "Celcius and Fahrenheit convertor", "Take screenshot", "Make graph", "Auto clicker", "HTML builder"]
 inc = 0
+fol = "programs/"
 
 os.system("clear")
 print("PYTHON TOOLS\nby HANSJORG VAN ROMPAY\n")
@@ -13,11 +14,12 @@ for x in programs:
 # Choose option
 def menu(argument):
     switcher = {
-        0: "Key.py",
-        1: "Degree.py",
-        2: "Screenshot.py",
-	3: "Chart.py",
-	4: "Mouse.py",
+        0: fol + "Key.py",
+        1: fol + "Degree.py",
+        2: fol + "Screenshot.py",
+	3: fol + "Chart.py",
+	4: fol + "Mouse.py",
+	5: fol + "Html.py",
     }
     return switcher.get(argument, "You invoked an error.")
 
